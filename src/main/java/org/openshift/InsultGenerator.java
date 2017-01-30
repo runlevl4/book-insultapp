@@ -19,7 +19,7 @@ public class InsultGenerator {
 		// Random().nextInt(words[1].length)];
 		// String noun = words[2][new Random().nextInt(words[2].length)];
 		try {
-			String databaseURL = "jdbc:postresql://";
+			String databaseURL = "jdbc:postgresql://";
 			databaseURL += System.getenv("POSTGRESQL_SERVICE_HOST");
 			databaseURL += "/" + System.getenv("POSTGRESQL_DATABASE");
 
