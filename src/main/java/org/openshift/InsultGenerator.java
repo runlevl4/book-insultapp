@@ -1,6 +1,5 @@
 package org.openshift;
 
-import java.util.Random;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
