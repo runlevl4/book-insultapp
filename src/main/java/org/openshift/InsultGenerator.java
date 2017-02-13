@@ -43,7 +43,8 @@ public class InsultGenerator {
 				connection.close();
 			}
 		} catch (Exception e) {
-			return "Houstong, we have a database connection problem!";
+			//return "Houston, we have a database connection problem!";
+			return e.getMessage();
 		}
 		return theInsult;
 
