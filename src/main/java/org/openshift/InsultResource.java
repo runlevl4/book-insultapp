@@ -1,0 +1,19 @@
+package org.openshift;
+
+import java.util.HashMap;
+import javax.enterprise.context.RequestScope;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@RequestScoped
+@Path("/insult")
+public class InsultResource {
+	@GET()
+	@Path("application/json")
+	public HashMap<String, String> getInsult() {
+		HashMap<String, String> theInsult = new HashMap<String, String>();
+		theInsult.put("insult", new InsultGenerator().generateInsult());
+		return theInsult;
+	}
+}
